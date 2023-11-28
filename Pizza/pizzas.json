@@ -1,0 +1,112 @@
+{
+    "pizzas": [
+        {
+            "imagem": "img/pizza-camponesa.jpg",
+            "nome": "Camponesa",
+            "ingredientes": "Mozarela, brócolis, bacon, alho ao azeite de oliva, catupiry e orégano",
+            "preco": "R$55,00"
+        },
+        {
+            "imagem": "img/pizza-de-calabresa-com-cebola.jpg",
+            "nome": "Calabresa com Cebola",
+            "ingredientes": "Mozarela, calabresa fatiada, cebola em rodelas e orégano",
+            "preco": "R$45,00"
+        },
+        {
+            "imagem": "img/pizza-romana.jpg",
+            "nome": "Romana",
+            "ingredientes": "Mozarela, calabresa, fatias de tomate, parmesão e orégano",
+            "preco": "R$45,00"
+        },
+        {
+            "imagem": "img/pizza-alho-poro.jpg",
+            "nome": "Alho Poró",
+            "ingredientes": "Mozarela, peito de peru, alho poró, cream cheese e orégano",
+            "preco": "R$45,00"
+        },
+        {
+            "imagem": "img/pizza-florence.jpg",
+            "nome": "Florence",
+            "ingredientes": "Mozarela, presunto, calabresa ralada, tomate, parmesão, catupiry e orégano",
+            "preco": "R$55,00"
+        },
+        {
+            "imagem": "img/pizza-atenas.jpg",
+            "nome": "Atenas",
+            "ingredientes": "Mozarela, presunto parma cobertos com pedaços de queijo feta e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-portuguesa.jpg",
+            "nome": "Portuguesa",
+            "ingredientes": "Mozarela, presunto, cebola, ovos, azeitonas verdes e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-lombo-com-champignon.jpg",
+            "nome": "Lombo com Champignon",
+            "ingredientes": "Mozarela, lombo defumado, champignon, catupiry e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-pepperoni.jpg",
+            "nome": "Pepperoni",
+            "ingredientes": "Mozarela, pepperoni fatiado e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-atum.jpg",
+            "nome": "Atum",
+            "ingredientes": "Mozarela, atum em pedaços, cebola, alcaparras e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-abobrinha.jpg",
+            "nome": "Abobrinha",
+            "ingredientes": "Mozarela, fatias de abobrinha regadas ao azeite de oliva, parmesão, catupiry e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-alho-e-oleo.jpg",
+            "nome": "Alho e Óleo",
+            "ingredientes": "Mozarela, alho refogado ao azeite de oliva coberto com parmesão e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-mozarela-de-bufala.jpg",
+            "nome": "Mozarela de Búfala",
+            "ingredientes": "Mozarela de búfala, tomates secos e manjericão fresco",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-lombo-com-catupiry.jpg",
+            "nome": "Lombo com Catupiry",
+            "ingredientes": "Mozarela, lombo, catupiry e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-crocante.jpg",
+            "nome": "Crocante",
+            "ingredientes": "Mozarela, bacon, catupiry, batata palha e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-de-bacon.jpg",
+            "nome": "Bacon",
+            "ingredientes": "Mozarela, pequenas fatias de bacon frito e orégano",
+            "preco": "R$65,00"
+        },
+        {
+            "imagem": "img/pizza-mexicana-1.jpg",
+            "nome": "Mexicana",
+            "ingredientes": "Mozarela, carne moída, pimenta chilli, pimenta cambuci, cheddar cremoso, tortilhas de milho sem glúten e orégano",
+            "preco": "R$85,00"
+        },
+        {
+            "imagem": "img/pizza-olimpia.jpg",
+            "nome": "Olímpia",
+            "ingredientes": "Mozarela, peito de frango desfiado e cogumelo paris cobertos com queijo provolone e orégano",
+            "preco": "R$85,00"
+        }
+    ]
+}
