@@ -1,58 +1,50 @@
-  @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    border: 0;
-    padding: 0;
+:root{
+    --cor-principal: #262442;
+    --cor-secundaria: #E8DFDF;
 }
 
-html, body
-{
+header {
     width: 100%;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(27, 27, 27);
-    font-family: 'Italiana', serif;
-}
-
-#cabecalho
-{
-    width: 100%;
-    height: 300px;
-    padding: 50px 0;
-    background-image: url("../img/TNPizzasCbclho.png");
-    background-size: cover;
-    background-position: center center;
+    height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-img
-{
+.nav-bar{
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+    height: 45px;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 
-#logo
-{
-    width: 300px;
-    transition: 1.1s;
-}
-
-#logo:hover
-{
-    transform: rotatez(360deg) scale(1.4);
-    transition: 1.1s;
+.nav-bar .menu{
+    width: 55px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    margin-top: 7px;
+    margin-bottom: 2px;
     cursor: pointer;
+    transition: .4s;
 }
 
-main
-{
+.nav-bar .menu:hover{
+    border-bottom: 1px solid white;
+    transition: .4s;
+}
+
+.fundo-header{
+    background-position: fixed;
+}
+
+main {
     width: 100%;
     max-width: 1300px;
     height: auto;
@@ -60,8 +52,65 @@ main
     padding: 15px;
 }
 
-#pizzas
-{
+#sobre{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-secundaria);
+}
+
+.sobre{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre h2{
+    color: black;
+    margin-top: 70px;
+    padding: 15px;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+.sobre p{
+    color: black;
+    width: 400px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.img-sobre{
+    width: 550px;
+    height: 100%;
+    margin-left: 750px;
+    margin-top: -170px;
+    position: absolute;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo1 {
+    color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#pizzas {
     width: 100%;
     height: auto;
     display: flex;
@@ -70,8 +119,7 @@ main
     margin-top: -15px;
 }
 
-.pizza
-{
+.pizza {
     width: 30%;
     padding: 3%;
     min-width: 300px;
@@ -84,20 +132,19 @@ main
     border-radius: 15px;
 }
 
-.pizza:hover
-{
+.pizza:hover {
     transform: scale(1.1);
     transition: .5s;
     backdrop-filter: blur(-10px);
     border: 3px solid rgb(255, 255, 255);
 }
 
-.pizza:hover img{
+.pizza:hover img {
     transform: rotateZ(90deg);
     transition: 1.0s;
 }
-.nome
-{
+
+.nome {
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -107,8 +154,7 @@ main
     margin-bottom: 10px;
 }
 
-.ingredientes
-{
+.ingredientes {
     font-size: 12pt;
     padding-top: 15px;
     padding-left: 5px;
@@ -123,30 +169,30 @@ main
     height: 100px;
     overflow-y: scroll;
     border: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;    
+    border-radius: 15px;
     transition: .3s;
 }
 
-.ingredientes:hover{
+.ingredientes:hover {
     border: 2px solid rgb(179, 179, 179);
 }
-.ingredientes::-webkit-scrollbar{
+
+.ingredientes::-webkit-scrollbar {
     display: none;
     transition: .3s;
 }
 
-.preco
-{
+.preco {
     font-size: 15pt;
     display: flex;
     position: relative;
     justify-content: center;
-    top:3%;
+    top: 3%;
     transition: 2.0s;
     color: white;
 }
 
-.pizza:hover .preco{
+.pizza:hover .preco {
     transform: scale(1.12);
     transition: .14s;
     font-weight: bold;
@@ -156,41 +202,40 @@ main
     transition: 1.0s;
 }
 
-.footer{
+footer {
     height: 100px;
     width: 100%;
-}
-
-.titulo1
-{
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
-    padding-top: 60px;
-    margin-bottom: 50px;
-    font-size: 50px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 60px;
+    box-shadow: 0 2px 5px black;
 }
 
-.fundo-titulo
-{
-    width: 100%;
-    height: 70px;
-    background-image: url(../img/fundo2.jpeg);
-    background-size: cover;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer span{
+    color: var(--cor-secundaria);
+    font-family: sans-serif;
+    font-weight: 300;
+    text-shadow: 0 2px 5px grey;
 }
 
-img
-{
+img {
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    border: 2px solid var(--cor-principal);
+}
 
