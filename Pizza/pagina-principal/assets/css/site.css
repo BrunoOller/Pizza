@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root{
+    --cor-principal:    #262442;
+    --cor-secundaria:   #E8DFDF;
+    --cor-terciaria:    #d4a884;
+    --preto:            #000000;
+    --cor-acinzentada:  #adadad;
+}
+
+header {
+    width:                100%;
+    height:               600px;
+    display:              flex;
+    flex-direction:       column;
+}
+
+.nav-bar a{
+    text-decoration:      none;
+}
+
+.nav-bar{
+    width:                100%;
+    height:               45px;
+    background-color:     var(--cor-principal);
+    display:              flex;
+    justify-content:      space-evenly;
+    align-items:          center;
+    position:             fixed;
+    z-index:              1;
+}
+
+.nav-bar .menu{
+    width:                55px;
+    height:               100%;
+    padding-left:         15px;
+    padding-right:        15px;
+    padding-bottom:       2px;
+    margin-top:           7px;
+    margin-bottom:        2px;
+    cursor:               pointer;
+    transition:           .4s;
+}
+
+.nav-bar .menu:hover{
+    border-bottom:        1px solid white;
+    transition:           .4s;
+}
+
+.fundo-header{
+    background-position:  fixed;
+}
+
+main {
+    width:                100%;
+    max-width:            1300px;
+    height:               auto;
+    margin:               0 auto;
+    padding:              15px;
+}
+
+#sobre{
+    width:                100%;
+    height:               400px;
+    display:              flex;
+    flex-direction:       row;
+    background-color:     var(--cor-secundaria);
+}
+
+.sobre{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre h2{
+    color: black;
+    margin-top: 70px;
+    padding: 15px;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+.sobre p{
+    color: black;
+    width: 400px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.img-sobre{
+    width: 550px;
+    height: 100%;
+    margin-left: 750px;
+    margin-top: -170px;
+    position: absolute;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo1 {
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 60px;
+    margin-bottom: 10px;
+    font-size: 25pt;
+}
+
+.menu-pizzas{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+
+.menu-pizzas img{
+    width: 800px;
+    height: 700px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-acinzentada);
+    border-left: 45px solid var(--cor-acinzentada);
+    border-right: 45px solid var(--cor-acinzentada);
+    box-shadow: 0 2px 5px var(--preto);
+}
+
+.titulo2 {
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    font-size: 25pt;
+}
+
+#pizzas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #adadad;
+    border-radius: 15px;
+    margin-top: -15px;
+}
+
+.pizza {
+    width: 30%;
+    padding: 3%;
+    min-width: 300px;
+    height: 600px;
+    gap: 15px;
+    transition: .3s;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--cor-secundaria);
+}
+
+.pizza img{
+    transition: 1.0s;
+    box-shadow: 0 3px 5px black;
+    border-radius: 100%;
+}
+
+.pizza:hover img {
+    transform: rotateZ(180deg) scale(1.1);
+    transition: 1.0s;
+}
+
+.nome {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 17pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var();
+}
+
+.ingredientes {
+    font-size: 12pt;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/folha.png);
+    opacity: 77%;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.ingredientes:hover {
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.ingredientes::-webkit-scrollbar {
+    display: none;
+    transition: .3s;
+}
+
+.preco {
+    font-size: 11.5pt;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 3%;
+    transition: .3s;
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+
+.pizza a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.pizza a button{
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+}
+
+.pizza a button p{
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.pizza a button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 60px;
+    box-shadow: 0 2px 5px black;
+}
+
+footer span{
+    color: var(--cor-secundaria);
+    font-family: sans-serif;
+    font-weight: 300;
+    text-shadow: 0 2px 5px grey;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    border: 2px solid var(--cor-principal);
+}
+
